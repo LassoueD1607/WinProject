@@ -1,0 +1,56 @@
+<div class="container"> 
+    <div> 
+      <h2>Modifier un Produit :</h2>              
+    </div> 
+         <form >          
+             <div hidden class="col-sm-2 col-md-2 col-lg-2"> 
+               <label >ID  Produit</label> 
+               <input readonly  type="text"  [(ngModel)]="currentProduit.id" name="idProduit" class="form-control"> 
+              </div> 
+          
+             <div class="col-sm-4 col-md-4 col-lg-4" > 
+               <label >Nom Produit</label> 
+               <input  type="text"[(ngModel)]= "currentProduit.marque"   
+                   name="nomProduit" class="form-control"> 
+             </div> 
+             <div class="col-sm-4 col-md-4 col-lg-4" > 
+                <label >Processeur</label> 
+                <input  type="text"[(ngModel)]= "currentProduit.processeur"   
+                    name="processeur" class="form-control"> 
+              </div> 
+              <div class="col-sm-4 col-md-4 col-lg-4" > 
+                <label >RAM</label> 
+                <input  type="text"[(ngModel)]= "currentProduit.ram"   
+                    name="RAM" class="form-control"> 
+              </div> 
+              <div class="col-sm-4 col-md-4 col-lg-4" > 
+                <label >Disque Dur</label> 
+                <input  type="text"[(ngModel)]= "currentProduit.disqueDur"   
+                    name="disque" class="form-control"> 
+              </div> 
+              <div class="col-sm-4 col-md-4 col-lg-4" > 
+                <label >Carte Graphique</label> 
+                <input  type="text"[(ngModel)]= "currentProduit.carteGraphique"   
+                    name="carteGraphique" class="form-control"> 
+              </div> 
+              <div class="col-sm-4 col-md-4 col-lg-4" > 
+                <label >Couleur</label> 
+                <input  type="text"[(ngModel)]= "currentProduit.coleur"   
+                    name="coleur" class="form-control"> 
+              </div> 
+      
+             
+
+             <div class="col-sm-2 col-md-2 col-lg-2"> 
+               <label >Prix Produit</label> 
+           <input type="number"   [(ngModel)]= "currentProduit.prix" 
+ 
+                   name="prixProduit" class="form-control"> 
+             </div> 
+
+              
+               
+               <div class="mt-2"> <button type="submit"  (click)="updateProduit()"  class="btn btn-success">Modifer</button> 
+               </div>   
+          </form> 
+</div> 

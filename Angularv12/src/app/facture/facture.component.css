@@ -1,0 +1,20 @@
+.main {
+  border-style: outset;
+  border-radius: 10px;
+  margin-top: 3%;
+  padding: 30px;
+}
+.detail {
+  margin-top: 100px;
+}
+.facture {
+  text-decoration: underline;
+  font-size: larger;
+}
+h1,
+th {
+  color: rgb(39, 39, 155);
+}
+h4 {
+  color: rgb(73, 69, 69);
+}

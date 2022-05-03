@@ -1,0 +1,54 @@
+<div class="container"> 
+    <div> 
+      <br>
+      <h2>Ajouter un Produit :</h2>              
+    </div>
+    <form >  
+           
+           
+     
+        <div class="col-sm-4 col-md-4 col-lg-4" > 
+          <label >Nom Produit</label> 
+          <input  type="text"[(ngModel)]= "newProduit.marque"   
+              name="nomProduit" class="form-control"> 
+        </div> 
+        <div class="col-sm-4 col-md-4 col-lg-4" > 
+          <label >Processeur</label> 
+          <input  type="text"[(ngModel)]= "newProduit.processeur"   
+              name="processeur" class="form-control"> 
+        </div> 
+        <div class="col-sm-4 col-md-4 col-lg-4" > 
+          <label >RAM</label> 
+          <input  type="text"[(ngModel)]= "newProduit.ram"   
+              name="RAM" class="form-control"> 
+        </div> 
+        <div class="col-sm-4 col-md-4 col-lg-4" > 
+          <label >Disque Dur</label> 
+          <input  type="text"[(ngModel)]= "newProduit.disqueDur"   
+              name="disque" class="form-control"> 
+        </div> 
+        <div class="col-sm-4 col-md-4 col-lg-4" > 
+          <label >Carte Graphique</label> 
+          <input  type="text"[(ngModel)]= "newProduit.carteGraphique"   
+              name="carteGraphique" class="form-control"> 
+        </div> 
+        <div class="col-sm-4 col-md-4 col-lg-4" > 
+          <label >Couleur</label> 
+          <input  type="text"[(ngModel)]= "newProduit.coleur"   
+              name="coleur" class="form-control"> 
+        </div> 
+
+        <div class="col-sm-2 col-md-2 col-lg-2"> 
+          <label >Prix Produit</label> 
+          <input type="number"   [(ngModel)]= "newProduit.prix"   
+              name="prixProduit" class="form-control"> 
+        </div> 
+
+        
+          
+      <div class="mt-2"> 
+         <button type="submit"  (click)="addProduit()"  class="btn btn-success">Ajouter</button> 
+        
+         </div>    
+    </form> 
+</div>

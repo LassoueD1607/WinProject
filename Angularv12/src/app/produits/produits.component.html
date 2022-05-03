@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <table class="table table-striped">
+          <tr>
+            <th>Id</th>
+            <th>Nom</th>
+            <th>Processeur</th>
+            <th>RAM</th>
+            <th>Disque Dur</th>
+            <th>Carte Graphique</th>
+            <th>Coleur</th>
+            <th>Prix</th>
+          
+
+  
+          </tr>
+  
+          <tbody *ngFor="let produit of produits">
+            <tr>
+              <td>{{produit.id}}</td>
+              <td>{{produit.marque}}</td>
+              <td>{{produit.processeur}}</td>
+              <td>{{produit.ram}}</td>
+              <td>{{produit.disqueDur}}</td>
+              <td>{{produit.carteGraphique}}</td>
+              <td>{{produit.coleur}}</td>
+              <td>{{produit.prix}}</td>
+              <td><a  *ngIf="!authService.isAdmin() && authService.isloggedIn"  class="btn btn-primary" (click)="addAchat(produit)"  >Acheter</a></td>
+              <td><a *ngIf="authService.isAdmin()" class="btn btn-danger" (click)="supprimerProduit(produit)" >Supprimer</a></td>
+              <td><a *ngIf="authService.isAdmin()" class="btn btn-success" [routerLink]="['/updateProduit',produit.id]" >Modifier</a></td>
+              
+
+              
+  
+            </tr>
+            
+          </tbody>
+
+        </table>
+        <button type="button"   class="btn btn-primary btn-lg btn-block" routerLink="/devis" >Confirm l'achat</button>
+
+      </div>
+
+    </div>
+
+  </div>

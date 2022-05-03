@@ -1,0 +1,10 @@
+img {
+  width: 150px;
+  height: 65px;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+* {
+  font-size: 102%;
+  z-index: 1;
+}

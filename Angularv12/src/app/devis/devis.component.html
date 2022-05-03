@@ -1,0 +1,65 @@
+<div class="container main">
+
+    <div class="row">
+        <div class="col-sm-7"><h1> <br> Devis</h1></div>
+        <div class="col-sm-5"><img src="assets/img/logo.png" alt=""></div>
+      </div> 
+
+<div class="row detail">
+    <div class="col-sm-8">
+        <h4> <strong> Société: Wind Consulting</strong></h4><br>
+        
+        <p> <strong> Adresse: </strong> Rue Chaanbi MAHDIA, 5100</p>
+        <p> <strong>Téléphone </strong> : 73 671 986</p>
+        <p><strong> Site: </strong> https://wind-consulting-tunisia.com/</p>
+        <p> <strong>Email:</strong> WindTechnologie@gmail.com </p>
+    </div>
+    <div class="col-sm-4">
+        <h4><strong>Client</strong></h4>
+        <br>
+        <p><strong>Nom client: {{loggedUser}}  </strong></p>
+        <p><strong>Adresse: Tunis</strong></p>
+        <br><br><br>
+        
+    </div>
+<div class="facture">
+    <p><strong>Date du devis: </strong></p>
+    <p><strong>Numero du devis:</strong></p>
+</div>
+
+
+
+  </div> 
+
+  <table class="table table-light table-hover table-striped">
+    <thead>
+      <tr>
+        <th >Designation des produits</th>
+        <th>Prix</th>
+      </tr>
+    </thead>
+    <tbody  *ngFor="let produit of produits" >
+      <tr>
+        <td > {{produit.marque}} </td>    
+
+        <td> {{produit.prix}} </td> 
+        
+
+      </tr>
+      
+    </tbody>
+  </table>
+<div class="row" style="margin-top: 50px;">
+
+    <div class="col-sm-8">
+       <p> <strong> Signature </strong> </p>
+    </div>
+    <div class="col-sm-4 ">
+
+        
+        <h5 class="finale">Prix Totale: {{prod}}DT </h5><br><br><br>
+        
+    </div>
+
+
+</div>
